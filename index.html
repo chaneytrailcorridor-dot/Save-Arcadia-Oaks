@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Protect Arcadia's Native Oaks</title>
+
+  <!-- Favicon: ✲ U+2732 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✲</text></svg>">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 16px 24px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .small {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Protect Arcadia's Native Oaks</h1>
+
+  <p>
+    Your email app should open automatically with a pre-written email.
+  </p>
+
+  <p>
+    Please add your name and city before sending.
+  </p>
+
+  <a id="emailButton" class="button" href="#">
+    Open Email
+  </a>
+
+  <p class="small">
+    If your email does not open automatically, tap the button above.
+    You can edit or personalize the message before sending.
+  </p>
+
+<script>
+
+const emailLink = `mailto:fgraham@ArcadiaCA.gov?cc=pcheng@ArcadiaCA.gov,dfu@ArcadiaCA.gov,skwan1@ArcadiaCA.gov&subject=Please%20Deny%20TRH%2026-11%20and%20TRE%2026-09%20and%20Protect%20Arcadia%27s%20Native%20Oaks&body=Dear%20Ms.%20Graham%2C%20Mayor%20Cheng%2C%20Mayor%20Pro%20Tem%20Fu%20and%20Councilmember%20Kwan%3A%0A%0AI%20am%20writing%20to%20urge%20the%20City%20of%20Arcadia%20to%20protect%20the%20native%20oaks%20threatened%20by%20the%20proposed%20LA28%20equestrian%20cross-country%20course%20at%20Santa%20Anita%20Park.%0A%0AThe%20applicant%E2%80%99s%20own%20arborist%20report%20recognizes%20these%20trees%20as%20protected%20oaks%20of%20continuing%20regulatory%20and%20arboricultural%20value.%20Arcadia%E2%80%99s%20rules%20require%20the%20applicant%20to%20demonstrate%20why%20removal%20is%20necessary%20and%20why%20it%20is%20preferable%20to%20alternative%20project%20designs.%20The%20City%20should%20require%20further%20redesign%20and%20not%20simply%20accept%20the%20applicant%27s%20current%20design%20and%20extensive%20tree%20removals.%0A%0ARemoving%20mature%20native%20oaks%20for%20the%20Olympics%20also%20conflicts%20with%20LA28%E2%80%99s%20environmental%20commitments%20to%20minimize%20environmental%20impacts%20and%20protect%20and%20restore%20nature.%20Sustainability%20cannot%20mean%20restoring%20nature%20in%20one%20place%20while%20unnecessarily%20destroying%20established%20native%20habitat%20in%20another.%0A%0AThe%20Olympics%20are%20in%20town%20for%20only%20a%20moment.%20These%20trees%20have%20been%20part%20of%20Arcadia%20for%20generations.%20If%20they%20are%20removed%2C%20that%20loss%20is%20permanent.%0A%0AI%20therefore%20respectfully%20request%20that%20the%20City%3A%0A%0A1.%20Deny%20TRH%2026-11%20and%20TRE%2026-09%20at%20the%20earliest%20available%20administrative%20stage%3B%0A2.%20Require%20the%20applicant%20to%20undertake%20a%20further%20tree-preserving%20redesign%20of%20the%20cross-country%20course%2C%20including%20alternative%20alignments%2C%20obstacle%20locations%2C%20grading%20configurations%2C%20and%20construction%20methods%3B%0A3.%20Require%20a%20persuasive%2C%20tree-by-tree%20demonstration%20that%20every%20proposed%20removal%20and%20encroachment%20is%20genuinely%20unavoidable%20before%20considering%20any%20future%20permit%3B%0A4.%20Reconsider%20whether%20reliance%20on%20categorical%20exemptions%20from%20CEQA%20is%20appropriate%20given%20the%20scale%20of%20the%20proposed%20impacts%20to%20protected%20native%20trees%3B%20and%0A5.%20Ensure%20meaningful%20public%20review%20and%20an%20opportunity%20for%20public%20participation%20before%20any%20decision%20authorizing%20tree%20removal%20or%20significant%20encroachment%20becomes%20final.%0A%0AThere%20is%20substantial%20public%20concern%20about%20these%20trees.%20If%20the%20permits%20continue%20through%20the%20approval%20process%2C%20we%20intend%20to%20participate%20at%20every%20available%20stage%20and%20challenge%20the%20proposed%20removals%20and%20encroachments%20through%20every%20applicable%20administrative%20and%20legal%20avenue.%20We%20would%20much%20rather%20see%20this%20resolved%20now%20through%20thoughtful%20redesign.%0A%0AHosting%20the%20Olympic%20Games%20should%20be%20a%20source%20of%20pride%20for%20our%20region%2C%20not%20shame%20for%20killing%20valuable%20trees.%20Please%20make%20preservation%20of%20these%20oaks%20a%20fundamental%20requirement%20of%20the%20course%20design.%0A%0ASincerely%2C%0A%0A%5BName%5D%0A%5BCity%2C%20State%2C%20ZIP%5D`;
+
+document.getElementById("emailButton").href = emailLink;
+
+/* Automatically attempt to open the email app */
+window.addEventListener("load", function() {
+  setTimeout(function() {
+    window.location.href = emailLink;
+  }, 600);
+});
+
+</script>
+
+</body>
+</html>
